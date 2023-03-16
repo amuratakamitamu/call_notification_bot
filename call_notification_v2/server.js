@@ -1,6 +1,7 @@
 /******** This program is only for discord.js v13.x *******/
 /******** Must use node.js version 16~ **********/
 /******** Use and edit package.json for update packages *******/
+/******** Don't upload the token on internet *******/
 
 //discordの関数定義
 const http = require("http");
@@ -112,7 +113,7 @@ client.on("voiceStateUpdate", (oldGuildMember, newGuildMember) => {
             oldGuildMember.channelId == process.env.VOICE_CHANNEL_ID_2 ||
             oldGuildMember.channelId == process.env.VOICE_CHANNEL_ID_3
         ) {
-            console.log("特定のボイスチャンネル判定終わり");
+            console.log("特定のボイスチャンネル判定終了");
             if (
                 client.channels.cache.get(oldGuildMember.channelId).members.size == 0
             ) {
