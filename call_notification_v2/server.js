@@ -1,7 +1,6 @@
-/******** This program is only for discord.js v13.x *******/
-/******** Must use node.js version 16~ **********/
-/******** Use and edit package.json for update packages *******/
-/******** Don't upload the token on internet *******/
+/******** discord.js v13.x *******/
+/******** node.js version 16~ **********/
+/******** Please create .env file and write token and channelID on it********/
 
 //discordの関数定義
 const http = require("http");
